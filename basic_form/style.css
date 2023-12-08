@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    max-width: 100%;
+}
+
+fieldset {
+    width: 100%;
+    border: 2px solid red; 
+}
+
+.bottom-fieldset {
+    width:95.5%;
+    border: 2px solid red; 
+    align-self: center;
+    margin-left: 20px;
+}
+
+legend {
+    color: red; 
+    padding: 5px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+.form-config {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.left-side-form,
+.right-side-form {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.left-side-form label,
+.right-side-form label {
+    display: inline-block;
+    text-align: left;
+    padding: 2px;
+
+}
+
+.left-side-form input,
+.right-side-form input,
+.left-side-form textarea {
+    width: calc(100% - 10px);
+    box-sizing: border-box;
+    margin: 2px;
+}
+
+.left-side-form label,
+.right-side-form label,
+.left-side-form input,
+.right-side-form input,
+.left-side-form textarea {
+    width: 48%;
+}
+
+.right-side-form label[for="radio1"], 
+.right-side-form label[for="radio2"], 
+.right-side-form label[for="radio3"] {
+    width:100%;
+    align-content: left;
+}
+
+.right-side-form h3 {
+    margin-top: 20px;
+}
+
+
+.right-side-form label input[type="radio"] {
+    
+    vertical-align: middle;
+}
+
+.bottom-fieldset button {
+    align-self: center;
+}
+

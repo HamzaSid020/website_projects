@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="#" method="post">
+        <div class="form-config">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="left-side-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <br>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <label for="phone">Phone</label>
+                    <input type="phone" id="phone" name="phone" required>
+                    <br>
+                    <label for="address">Address</label>
+                    <textarea id="address" name="address" rows="2" required></textarea>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Delivery Instruction</legend>
+                <div class="right-side-form">
+                    <label for="coupon">Coupon</label>
+                    <input type="number" min="4" id="coupon" name="coupon" required>
+                    <br>
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required>
+                    <br>
+                    <h3>Would you like to take a quick survey?</h3>
+                    <label for="radio1">
+                        <input type="radio" id="radio1" name="radio" value="option1"> No
+                    </label>
+                    <br>
+                    <label for="radio2">
+                        <input type="radio" id="radio2" name="radio" value="option2"> Never
+                    </label>
+                    <br>
+                    <label for="radio3">
+                        <input type="radio" id="radio3" name="radio" value="option3"> NEVER with capital letters
+                    </label>
+                    <br>
+                </div>
+            </fieldset>
+        </div>
+        <fieldset class="bottom-fieldset">
+            <input type="checkbox" id="checkbox1" name="checkbox[]" value="option1">
+            <label for="checkbox1">I agree to the terms and conditions</label>
+            <br>
+            <button type="submit">Submit Request</button>
+        </fieldset>
+
+    </form>
+    <br>
+</body>
+
+</html>
